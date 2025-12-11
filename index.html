@@ -6,24 +6,6 @@
   <title>Two Souls: Reborn</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; user-select: none; }
-
-    <!-- Música de fundo -->
-    <audio id="bgm" src="backgroundmusic.mp3" autoplay loop></audio>
-    
-    <script>
-    // Ajusta o volume quando puder (navegadores bloqueiam autoplay até primeira interação)
-    const bgm = document.getElementById("bgm");
-    
-    function setVolume() {
-      bgm.volume = 0.37;
-    }
-    
-    // Tenta definir imediatamente
-    setVolume();
-    
-    // Caso o navegador bloqueie, define após qualquer clique
-    document.addEventListener("click", setVolume, { once: true });
-    </script>
       
     body {
       background: #0d0d0d;
@@ -191,6 +173,25 @@
     }
   </style>
 </head>
+
+<!-- Música de fundo -->
+    <audio id="bgm" src="backgroundmusic.mp3" autoplay loop></audio>
+    
+    <script>
+    // Ajusta o volume quando puder (navegadores bloqueiam autoplay até primeira interação)
+    const bgm = document.getElementById("bgm");
+    
+    function setVolume() {
+      bgm.volume = 0.37;
+    }
+    
+    // Tenta definir imediatamente
+    setVolume();
+    
+    // Caso o navegador bloqueie, define após qualquer clique
+    document.addEventListener("click", setVolume, { once: true });
+    </script>
+  
 <body>
 
   <header class="fade-in">
@@ -351,4 +352,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
