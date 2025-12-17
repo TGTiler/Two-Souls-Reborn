@@ -324,8 +324,14 @@ document.addEventListener("click", setVolume, { once: true });
     <div class="hero-content slide-up">
       <h2>Um Jogo Feito Para o Nosso Amor</h2>
       <p>Explore memórias, complete desafios românticos e aproveite essa experiência especial criada só para nós dois.</p>
-      <a class="btn glow" id="jogarBtn">Jogar no Roblox</a>
-      <div id="breveMsg" style="display:none; position:absolute; margin-top:10px; background:#ff6fa3; padding:8px 14px; border-radius:8px; color:#fff; font-size:16px;">Em breve</div>
+      <a 
+          class="btn glow" 
+          href="https://www.roblox.com/games/93125532844572/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Jogar no Roblox
+        </a>
     </div>
   </section>
 
@@ -462,24 +468,12 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCarousel();
   startAuto();
 
-  // BOTÃO "EM BREVE"
-  const jogarBtn = document.getElementById('jogarBtn');
-  const breveMsg = document.getElementById('breveMsg');
-  if(jogarBtn){
-    jogarBtn.addEventListener('mouseover', ()=> breveMsg.style.display = 'block');
-    jogarBtn.addEventListener('mouseout', ()=> breveMsg.style.display = 'none');
-    jogarBtn.addEventListener('click', (e)=>{
-      e.preventDefault();
-      breveMsg.style.display = 'block';
-      setTimeout(()=> breveMsg.style.display = 'none', 1500);
-    });
-  }
-
 });
 </script>
 
 </body>
 </html>
+
 
 
 
