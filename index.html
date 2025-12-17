@@ -297,7 +297,7 @@
 <audio id="bgm" src="backgroundmusic.mp3" autoplay loop></audio>
 <script>
 const bgm = document.getElementById("bgm");
-function setVolume() { bgm.volume = 0.37; }
+function setVolume() { bgm.volume = 1; }
 setVolume();
 document.addEventListener("click", setVolume, { once: true });
 </script>
@@ -396,6 +396,7 @@ setInterval(spawnHeart,700);
     <div class="carousel-track">
       <img src="img1.jpg" alt="Imagem 1">
       <img src="img2.jpg" alt="Imagem 2">
+      <img src="img3.jpg" alt="Imagem 3">
     </div>
 
     <button class="carousel-btn next">❯</button>
@@ -479,4 +480,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
